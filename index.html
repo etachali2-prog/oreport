@@ -114,20 +114,20 @@
     e.preventDefault();
     
     const submitBtn = form.querySelector('button[type="submit"]');
-    submitBtn.textContent = 'Ergamaa jira...';
+    submitBtn.textContent = "Ergamaa jira...";
     submitBtn.disabled = true;
     
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-         alert('Galatoomaa! Gabaasni keessan sirriitti ergameera.');
+         alert("Galatoomaa! Gabaasni keessan sirriitti ergameera.");
          form.reset(); 
-         submitBtn.textContent = 'Ergi';
+         submitBtn.textContent = "Ergi";
          submitBtn.disabled = false;
       })
       .catch(error => {
          console.error('Error!', error.message);
-         alert('Dogoggorri uumameera. Maaloo irra deebi\'ii yaali.');
-         submitBtn.textContent = 'Ergi';
+         alert("Dogoggorri uumameera. Maaloo irra deebi'ii yaali.");
+         submitBtn.textContent = "Ergi";
          submitBtn.disabled = false;
       });
   });
