@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabaasa Garee Teekinikaa</title>
+    <title>Unka Gabaasa Damee Teknikaa</title>
     <style>
         body {
             background-color: rgba(0, 29, 5, 0.1);
@@ -13,104 +13,94 @@
     </style>
 </head>
 <body>
-
- <a href="https://etachali2-prog.github.io/To-home/">Gara Manaatti</a> 
- 
- <label>Afaan:</label>
+ <a href="https://etachali2-prog.github.io/To-home/">Gara Waajjira Homaatti</a> <label>Afaan:</label>
 <select onchange="location = this.value;">
   <option value="" disabled selected>Select Language</option>
   <option value="https://etachali2-prog.github.io/oreport/">Afaan Oromoo</option>
   <option value="https://etachali2-prog.github.io/report/">English</option>
   <option value="https://etachali2-prog.github.io/Areport/">Amharic</option>
 </select>
-
-
-
-
-
- <marquee> 
-    <h1 style="color:Green;">Kutaa: Unka Gabaasa Garee Teekinikaa!</h1> 
- </marquee> 
+ <marquee> <h1 style="color:Green;">Kutaa: Unka Gabaasa Damee Teknikaa!</h1> </marquee> 
    
   <form id="myForm">
      
-    <label>Guyyaa:</label> <input type="date" name="Date" required>
-    <label>Kutaa/Koreetti:</label> <input type="text" name="Department"><br><br>
+    <label>Guyyaa:</label><input type="date" name="Date" required>
+    <label>Kutaa/Damee:</label><input type="text" name="Department"><br><br>
     
-    <label>Kan Gaafate:</label> <input type="text" name="RequestedBy">
-    <label>Sa'aatii Gaaffii:</label> <input type="time" name="RequestedTime"><br><br>
+    <label>Kan Gaafate:</label><input type="text" name="RequestedBy">
+    <label>Sa'aatii Gaaffii:</label><input type="time" name="RequestedTime"><br><br>
     
-    <label>Maqaa Maashinii:</label> <input type="text" name="MachineName">
-    <label>Bakka/Iddoo:</label> <input type="text" name="Location"><br><br>
+    <label>Maqaa Maashinii:</label><input type="text" name="MachineName">
+    <label>Iddoo/Bakka:</label><input type="text" name="Location"><br><br>
     
-    <label>Itoota Suphaa Barbaachisan:</label>
+    <label>Gosa Suphaa Barbaachisu:</label>
     <select name="MaintenanceType">
-      <option value="Preventive Maintenance">Suphaa Ittisaa (Preventive)</option>
+      <option value="Preventive Maintenance">Suphaa Ittisa Argamaa (Preventive)</option>
       <option value="Corrective Maintenance">Suphaa Sirreessaa (Corrective)</option>
-      <option value="Emergency Breakdown">Caccaba Hangafoomaa (Emergency)</option>
+      <option value="Emergency Breakdown">Suphaa Hatattamaa (Emergency)</option>
       <option value="Inspection">Sakatta'iinsa (Inspection)</option>
-      <option value="Installation">Dhaaba/Miseensa (Installation)</option>
-      <option value="Modification">Fooyya'iinsa (Modification)</option>
+      <option value="Installation">Dhaabu/Dhaabuu (Installation)</option>
+      <option value="Modification">Fooyyessiinsaa (Modification)</option>
     </select><br><br>
     
-    <label>Ibsa Rakkoichaa:</label><br>
+    <label>Ibsa Rakkoo/Miidhaa:</label><br>
     <textarea name="ProblemDescription"></textarea><br><br>
     
-    <label>Saddarkaa Ariifachiisummaa:</label>
+    <label>Sadarkaa Hatattamaa:</label>
     <select name="PriorityLevel">
-      <option value="Low">Gadanaa (Low)</option>
-      <option value="Medium">Giddu-galeessa (Medium)</option>
-      <option value="High">Olaanaa (High)</option>
-      <option value="Urgent">Ariifachiisaa (Urgent)</option>
+      <option value="Low">Gadi Aanaa</option>
+      <option value="Medium">Giddu Galeessa</option>
+      <option value="High">Olaanaa</option>
+      <option value="Urgent">Ariifachiisaa</option>
     </select><br><br>
     
-    <label>Gochawwan Suphaa Gaafataman:</label>
+    <label>Hojii Suphaa Gaafatame:</label>
     <select name="MaintenanceActivity">
-      <option value="Electrical troubleshooting">Barbaacha fi Sirreessaa Elektriikaa</option>
-      <option value="Mechanical repair">Suphaa Meekaaniikaa</option>
-      <option value="Workshop">Hojii Waajira Suphaa (Workshop)</option>
+      <option value="Electrical troubleshooting">Barbaacha Rakkoo Elektriikaa</option>
+      <option value="Mechanical repair">Suphaa Mekaaniikaa</option>
+      <option value="Workshop">Hojii Wardiyaa/Warkishooppii</option>
     </select><br><br>
     
     <hr>
     <h3>Tarkaanfii Kutaa Suphaa:</h3>
-    <label>Maqaa Teekinishiyana Ramadame:</label> <input type="text" name="AssignedTechnician">
-    <label>Guyyaa:</label> <input type="date" name="Date">
-    <label>Sa'aatii:</label> <input type="time" name="Time"><br><br>
-    <label>Tarkaanfii Filatame/Fudhatame:</label><br>
+    <label>Maqaa Tekniishana Ramadame:</label><input type="text" name="AssignedTechnician">
+    <label>Guyyaa:</label><input type="date" name="Date">
+    <label>Sa'aatii:</label><input type="time" name="Time"><br><br>
+    <label>Tarkaanfii Filatame:</label><br>
     <textarea name="ActionTaken"></textarea><br><br>
 
     <hr>
-    <h3>Ibsa Xumura Hojii:</h3>
-    <label>Sa'aatii Jalqaba Hojii:</label> <input type="time" name="WorkStartTime">
-    <label>Sa'aatii Xumura Hojii:</label> <input type="time" name="WorkCompletionTime">
-    <label>Turtii Maashiniin Dhaabbate:</label> <input type="text" name="DowntimeDuration"><br><br>
+    <h3>Odeeffannoo Xumuraa:</h3>
+    <label>Sa'aatii Hojiin Jalqabame:</label><input type="time" name="WorkStartTime">
+    <label>Sa'aatii Hojiin Xumurame:</label><input type="time" name="WorkCompletionTime">
+    <label>Yeroo Maashiniin Dhaabbate:</label><input type="text" name="DowntimeDuration"><br><br>
 
     <hr>
-    <h3>Meeshaalee Jijjiiraa Barbaachisan (Spare Parts):</h3>
-    <label>Maqaa Meeshaa:</label> <input type="text" name="SpareItemName">
-    <label>Lak. Meeshaa/Ibsa (Part No):</label> <input type="text" name="SparePartNo">
-    <label>Safeeffata (Unit):</label> <input type="text" name="SpareUnit">
-    <label>Baay'ina:</label> <input type="number" name="SpareQuantity">
+    <h3>Ulaagaa Mi'a Jidduu (Spare Part):</h3>
+    <label>Maqaa Mi'aa:</label><input type="text" name="SpareItemName">
+    <label>Lakk Paartii/Ibsa:</label><input type="text" name="SparePartNo">
+    <label>Safartuu (Unit):</label><input type="text" name="SpareUnit">
+    <label>Baay'ina:</label><input type="number" name="SpareQuantity">
     <br><br>
-    <label>Yaada dabalataa (Remark):</label><br>
+    <label>Yaada/Hubachiisa:</label><br>
     <textarea name="SpareRemark"></textarea><br><br>
 
     <hr>
     <label>Haala Suphaa:</label>
     <select name="MaintenanceStatus">
-      <option value="In progress">Hojii rarra'aa jira (In progress)</option>
-      <option value="Completed">Xumurameera (Completed)</option>
-      <option value="Pending">Eegamaa jira (Pending)</option>
+      <option value="In progress">Adeemsarra Jira</option>
+      <option value="Completed">Xumurameera</option>
+      <option value="Pending">Eeggamsarra Jira</option>
     </select><br><br>
     
-    <label>Yoo eegamaa jire, maaliif?</label><br>
+    <label>Yoo eeggamsarra jiraate, maaliif?</label><br>
     <textarea name="PendingReason"></textarea><br><br>
     
     <hr>
     <h3>Mirkaneessa:</h3>
-    <label>Maqaa To'ataa/Garee Dursaa:</label>
+    <label>Maqaa Suparvaayizeraa/Goggoo Garee:</label>
     <input type="text" name="SupervisorName"><br><br>
-    <label>Maqaa Dursaa Garee Teekinikaa:</label>
+    <label>Maqaa Dura Taa'aa Garee Teknikaa:</label>
     <input type="text" name="TechnicTeamLeaderName"><br><br>
 
     <button type="submit">Ergi</button>
@@ -129,14 +119,14 @@
     
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-         alert('Galatoomaa! Gabaasni keessan milkiidhaan ergameera.');
+         alert('Galatoomaa! Gabaasni keessan sirriitti ergameera.');
          form.reset(); 
          submitBtn.textContent = 'Ergi';
          submitBtn.disabled = false;
       })
       .catch(error => {
          console.error('Error!', error.message);
-         alert('Dogoggorri uumameera. Maaloo irra deebi'aa yaala.');
+         alert('Dogoggorri uumameera. Maaloo irra deebi'ii yaali.');
          submitBtn.textContent = 'Ergi';
          submitBtn.disabled = false;
       });
