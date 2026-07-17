@@ -35,12 +35,12 @@
     
     <label>Gosa Suphaa Barbaachisu:</label>
     <select name="MaintenanceType">
-      <option value="Preventive Maintenance">Suphaa Ittisa Argamaa (Preventive)</option>
-      <option value="Corrective Maintenance">Suphaa Sirreessaa (Corrective)</option>
-      <option value="Emergency Breakdown">Suphaa Hatattamaa (Emergency)</option>
-      <option value="Inspection">Sakatta'iinsa (Inspection)</option>
-      <option value="Installation">Dhaabu/Dhaabuu (Installation)</option>
-      <option value="Modification">Fooyyessiinsaa (Modification)</option>
+      <option value="Preventive Maintenance">Suphaa Ittisa Argamaa</option>
+      <option value="Corrective Maintenance">Suphaa Sirreessaa</option>
+      <option value="Emergency Breakdown">Suphaa Hatattamaa</option>
+      <option value="Inspection">Sakatta'iinsa</option>
+      <option value="Installation">Dhaabu/Mijaawaa</option>
+      <option value="Modification">Fooyyessiinsaa</option>
     </select><br><br>
     
     <label>Ibsa Rakkoo/Miidhaa:</label><br>
@@ -58,7 +58,7 @@
     <select name="MaintenanceActivity">
       <option value="Electrical troubleshooting">Barbaacha Rakkoo Elektriikaa</option>
       <option value="Mechanical repair">Suphaa Mekaaniikaa</option>
-      <option value="Workshop">Hojii Wardiyaa/Warkishooppii</option>
+      <option value="Workshop">Hojii Warkishooppii</option>
     </select><br><br>
     
     <hr>
@@ -126,7 +126,7 @@
       })
       .catch(error => {
          console.error('Error!', error.message);
-         alert('Dogoggorri uumameera. Maaloo irra deebi'ii yaali.');
+         alert('Dogoggorri uumameera. Maaloo irra deebi\'ii yaali.');
          submitBtn.textContent = 'Ergi';
          submitBtn.disabled = false;
       });
